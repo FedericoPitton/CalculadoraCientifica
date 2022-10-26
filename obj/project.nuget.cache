@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "VcDQBYiRs1kOhXFetkBjW+tePPNWMlZ4dOEC3NG5q07SJCMw0FVAyuyKqaDGKhaD9FgwMbH5BkG1hCM5rkf0qw==",
+  "success": true,
+  "projectFilePath": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\InterfazCalculadora\\InterfazCalculadora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fedej\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.7\\microsoft.netcore.app.host.win-x64.6.0.7.nupkg.sha512",
+    "C:\\Users\\fedej\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.7\\microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512",
+    "C:\\Users\\fedej\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.7\\microsoft.windowsdesktop.app.ref.6.0.7.nupkg.sha512",
+    "C:\\Users\\fedej\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.7\\microsoft.netcore.app.ref.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

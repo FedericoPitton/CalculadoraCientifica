@@ -105,12 +105,17 @@ namespace InterfazCalculadora
                 }
                 if (!(i == 0 && ecuacion.Length - 1 == 0))
                 {
-                    if (((int)ecuacion[i] == 40) && ((int)ecuacion[i + 1] == 41))
+                    if (i != ecuacion.Length - 1)
                     {
-                        errorProvider1.SetError(textEcuacion, "No pueden haber paretensis vacios");
-                        Console.WriteLine("No pueden haber paretensis vacios");
-                        return false;
+                        if (((int)ecuacion[i] == 40) && ((int)ecuacion[i + 1] == 41))
+                        {
+                            errorProvider1.SetError(textEcuacion, "No pueden haber paretensis vacios");
+                            Console.WriteLine("No pueden haber paretensis vacios");
+                            return false;
+                        }
+
                     }
+                    
                 }
             }
             if (parentesisCerrado != parentesisAbierto)

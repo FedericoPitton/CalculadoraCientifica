@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\InterfazCalculadora\\InterfazCalculadora.csproj",
+      "projectUniqueName": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\Git\\InterfazCalculadora\\InterfazCalculadora.csproj",
       "projectName": "InterfazCalculadora",
-      "projectPath": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\InterfazCalculadora\\InterfazCalculadora.csproj",
+      "projectPath": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\Git\\InterfazCalculadora\\InterfazCalculadora.csproj",
       "packagesPath": "C:\\Users\\fedej\\.nuget\\packages\\",
-      "outputPath": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\InterfazCalculadora\\obj\\",
+      "outputPath": "E:\\Academico\\UTN programacion\\Tercer Semestre\\Laboratorio\\Git\\InterfazCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fedej\\AppData\\Roaming\\NuGet\\NuGet.Config",

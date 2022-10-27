@@ -94,21 +94,28 @@ namespace InterfazCalculadora
             int parentesisCerrado = 0;
             for (int i = 0; i < ecuacion.Length; i++)
             {
+
                 if ((int)ecuacion[i] == 41) parentesisCerrado++;
                 if ((int)ecuacion[i] == 40) parentesisAbierto++;
                 if (parentesisCerrado > parentesisAbierto)
                 {
+                    errorProvider1.SetError(textEcuacion, "No pueden cerrarse paretensis que no han sido abiertos");
                     Console.WriteLine("No pueden cerrarse paretensis que no han sido abiertos");
                     return false;
                 }
-                if (((int)ecuacion[i] == 40) && ((int)ecuacion[i + 1] == 41))
+                if (!(i == 0 && ecuacion.Length - 1 == 0))
                 {
-                    Console.WriteLine("No pueden haber paretensis vacios");
-                    return false;
+                    if (((int)ecuacion[i] == 40) && ((int)ecuacion[i + 1] == 41))
+                    {
+                        errorProvider1.SetError(textEcuacion, "No pueden haber paretensis vacios");
+                        Console.WriteLine("No pueden haber paretensis vacios");
+                        return false;
+                    }
                 }
             }
             if (parentesisCerrado != parentesisAbierto)
             {
+                errorProvider1.SetError(textEcuacion, "No se cerraron todos los parentesis");
                 Console.WriteLine("No se cerraron todos los parentesis");
                 return false;
             }
@@ -118,4 +125,3 @@ namespace InterfazCalculadora
         }
     }
 }
-

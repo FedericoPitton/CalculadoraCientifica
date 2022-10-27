@@ -181,9 +181,14 @@ namespace InterfazCalculadora
         //Recibe de a dos elementos y realiza el calculo en base al operador recibido
         public static string calculo(string termino1, string termino2, int operador)
         {
-            float term1 = float.Parse(termino1);
-            float term2 = float.Parse(termino2);
-            float result = 0;
+            try
+            {
+                float term1 = float.Parse(termino1);
+                float term2 = float.Parse(termino2);
+                float result = 0;
+
+            
+           
             switch (operador)
             {
                 //Suma
@@ -206,6 +211,16 @@ namespace InterfazCalculadora
                     break;
             }
             return result.ToString();
+            }
+            catch (DivideByZeroException)
+            {
+                throw new DivideByZeroException("Se intento dividir por 0 ");
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Se intento multiplicar/dividir por un numero muy grande o muy chico");
+            }
         }
     }
 }
